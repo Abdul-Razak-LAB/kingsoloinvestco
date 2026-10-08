@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
 import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Call or email King Solomon Investment & Supplies, or send a service inquiry using the contact form.",
+  description: "Call or email King Solomon Investment & Supplies ltd, or send a service inquiry using the contact form.",
 };
 
 export default function ContactPage() {
@@ -34,6 +34,10 @@ export default function ContactPage() {
             <div className="contact-method">
               <Mail size={20} aria-hidden="true" />
               <div><strong>Email</strong><a href={`mailto:${business.email}`}>{business.email}</a></div>
+            </div>
+            <div className="contact-method">
+              <MapPin size={20} aria-hidden="true" />
+              <div><strong>Location</strong><span>{business.location}</span></div>
             </div>
             <p>Message our team on WhatsApp using the floating button.</p>
           </div>

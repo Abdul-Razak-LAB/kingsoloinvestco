@@ -4,7 +4,7 @@ import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "How King Solomon Investment & Supplies handles website contact inquiries.",
+  description: "How King Solomon Investment & Supplies ltd handles website contact inquiries.",
 };
 
 export default function PrivacyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       />
       <section className="inner-content page-wrap">
         <div className="privacy-copy content-card">
-          <p>This website collects the details you choose to submit through the contact form, including your name, email address, optional phone number, service selection, and message. The information is used to respond to your inquiry and is sent to King Solomon Investment &amp; Supplies by email through its email delivery provider, Resend.</p>
+          <p>This website collects the details you choose to submit through the contact form, including your name, email address, optional phone number, service selection, and message. The information is used to respond to your inquiry and is sent to King Solomon Investment &amp; Supplies ltd by email through its email delivery provider, Resend.</p>
           <h2>How information is handled</h2>
           <p>The initial website does not save inquiries in a website database. Information may be handled by email and service providers involved in delivering the message. The business should confirm its email retention practices and provider settings before launch.</p>
           <h2>Your choices</h2>

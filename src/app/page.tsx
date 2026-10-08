@@ -39,11 +39,11 @@ export default function Home() {
     <main>
       <section className="home-showcase content-card" aria-labelledby="intro-title">
         <div className="hero" aria-label="King Solomon homepage banner">
-          <h1 className="sr-only">King Solomon Investment &amp; Supplies</h1>
+          <h1 className="sr-only">King Solomon Investment &amp; Supplies ltd</h1>
           <Image
             className="hero-reference-image"
             src="/IMG-20260928-WA0865.jpg"
-            alt="King Solomon Investment & Supplies homepage banner"
+            alt="King Solomon Investment & Supplies ltd homepage banner"
             fill
             priority
             sizes="(max-width: 1208px) 100vw, 1160px"
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
         <div className="intro">
           <div className="intro-copy">
-            <h2 id="intro-title">The World Is In<br /><em>Your Hands</em></h2>
+            <h2 id="intro-title">Your World Is In<br /><em>Your Hands</em></h2>
           </div>
           <p className="intro-description">Your One-Stop Center for Lands, Cars, Building, Real Estate and Global Supplies. Genuine lands, quality cars, strong buildings — all with wisdom and integrity.</p>
         </div>

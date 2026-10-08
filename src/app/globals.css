@@ -280,7 +280,7 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
   .closing a { font-size: 14px; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 34px 20px; padding-block: 44px 35px; }
   .footer-main > div:first-child { grid-column: 1 / -1; }
-  .footer-bottom { align-items: flex-start; flex-direction: column; justify-content: center; gap: 5px; padding-block: 12px; }
+  .footer-bottom { align-items: center; flex-direction: column; justify-content: center; gap: 5px; padding-block: 12px; text-align: center; }
   .page-hero-content { padding-block: 62px 66px; }
   .page-hero h1 { font-size: 44px; }
   .page-hero-description { max-width: 100%; font-size: 16px; }

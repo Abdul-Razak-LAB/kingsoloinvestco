@@ -42,7 +42,7 @@ export async function POST(request: Request) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.RESEND_FROM_EMAIL;
-  const recipient = process.env.CONTACT_TO_EMAIL ?? "kabuteysolomon34@gmail.com";
+  const recipient = process.env.CONTACT_TO_EMAIL ?? "info@kingsoloinvestco.com";
   if (!apiKey || !from) return json("The inquiry service is not configured yet. Please call or email our team.", 503);
 
   try {

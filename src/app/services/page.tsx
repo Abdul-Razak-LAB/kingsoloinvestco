@@ -6,7 +6,7 @@ import { PageHero } from "@/components/page-hero";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Explore real estate, land, building supplies, construction, and related service inquiries with King Solomon Investment & Supplies.",
+  description: "Explore real estate, land, building supplies, construction, and related service inquiries with King Solomon Investment & Supplies ltd.",
 };
 
 export default function ServicesPage() {

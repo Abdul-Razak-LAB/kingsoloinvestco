@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <Link className="brand footer-brand" href="/">
             <Image className="brand-logo" src="/IMG-20260928-WA0007.jpg" alt="" width={62} height={62} />
-            <span className="brand-copy"><strong>King Solomon</strong><small>Investment &amp; Supplies</small></span>
+            <span className="brand-copy"><strong>King Solomon</strong><small>Investment &amp; Supplies ltd</small></span>
           </Link>
           <p className="footer-note">Real estate, land, building supplies, and construction service inquiries.</p>
         </div>
@@ -27,11 +27,12 @@ export function SiteFooter() {
           <div className="footer-links">
             {business.phones.map((phone) => <a href={`tel:${phone.href}`} key={phone.display}>{phone.display}</a>)}
             <a href={`mailto:${business.email}`}>{business.email}</a>
+            <span>{business.location}</span>
           </div>
         </div>
       </div>
       <div className="footer-bottom page-wrap">
-        <span>© {new Date().getFullYear()} King Solomon Investment &amp; Supplies</span>
+        <span>© {new Date().getFullYear()} King Solomon Investment &amp; Supplies ltd</span>
         <span>Website inquiries are sent securely by email.</span>
       </div>
     </footer>

@@ -39,7 +39,7 @@ export function PrimaryNavigation() {
       <div className="site-navigation-inner">
         <Link className="site-navigation-brand" href="/" aria-label={`${business.name} home`}>
           <Image className="site-navigation-logo" src="/IMG-20260928-WA0007.jpg" alt="" width={56} height={56} priority />
-          <span className="site-navigation-brand-copy"><strong>King Solomon</strong><small>Investment &amp; Supplies</small></span>
+          <span className="site-navigation-brand-copy"><strong>King Solomon</strong><small>Investment &amp; Supplies ltd</small></span>
         </Link>
         <div className="site-navigation-links">
           <Link href="/">Home</Link>
