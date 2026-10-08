@@ -5,6 +5,12 @@ export const runtime = "nodejs";
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const responseHeaders = { "Cache-Control": "no-store" };
 
+function safeErrorMessage(message: string) {
+  return message
+    .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "[email]")
+    .replace(/\bre_[A-Za-z0-9_-]+\b/g, "[redacted]");
+}
+
 function json(message: string, status: number) {
   return Response.json({ message }, { status, headers: responseHeaders });
 }
@@ -58,12 +64,18 @@ export async function POST(request: Request) {
     });
 
     if (result.error) {
-      console.error("Resend rejected an inquiry email", { name: result.error.name, statusCode: result.error.statusCode });
+      console.error("Resend rejected an inquiry email", {
+        name: result.error.name,
+        statusCode: result.error.statusCode,
+        message: safeErrorMessage(result.error.message),
+      });
       return json("We could not send your message right now. Please call or email our team.", 502);
     }
     return json("Your inquiry has been sent.", 200);
   } catch (error) {
-    console.error("Inquiry email delivery failed", error instanceof Error ? error.name : "UnknownError");
+    console.error("Inquiry email delivery failed", error instanceof Error
+      ? { name: error.name, message: safeErrorMessage(error.message) }
+      : "UnknownError");
     return json("We could not send your message right now. Please call or email our team.", 502);
   }
 }
