@@ -21,7 +21,7 @@ export default function AboutPage() {
       />
       <section className="inner-content page-wrap">
         <div className="about-grid content-card">
-          <div className="about-photo" role="img" aria-label="Light-filled contemporary residential interior" />
+          <div className="about-photo" role="img" aria-label="King Solomon Investment and Supplies office interior" />
           <div className="about-copy">
             <p className="eyebrow eyebrow-red">Next steps</p>
             <h2>Start with a conversation.</h2>

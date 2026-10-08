@@ -176,8 +176,8 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .service-title { margin: 0 0 8px; color: var(--navy); font-family: Georgia, serif; font-size: 24px; font-weight: 400; }
 .service-row p { margin: 0; color: var(--muted); font-size: var(--text-body); line-height: 1.65; }
 .services-cta { margin-top: 35px; }
-.about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 0; align-items: stretch; }
-.about-photo { min-height: 430px; background: url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85") center / cover; }
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 0; align-items: stretch; }
+.about-photo { aspect-ratio: 1844 / 768; background: url("/about-next-steps.jpg") center / 100% 100% no-repeat; }
 .about-copy { align-self: center; padding: 40px; }
 .about-copy h2 { margin: 0 0 18px; color: var(--navy); font-family: Georgia, serif; font-size: 36px; font-weight: 400; line-height: 1.15; }
 .about-copy p { color: var(--muted); font-size: var(--text-body); line-height: 1.7; }
@@ -287,7 +287,6 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
   .inner-content { padding-block: 48px 65px; }
   .service-list { grid-template-columns: 1fr; }
   .about-grid, .contact-layout { grid-template-columns: 1fr; gap: 18px; }
-  .about-photo { min-height: 240px; }
   .about-copy { padding: 25px 21px; }
   .contact-details, .contact-form { padding: 23px 18px; }
   .privacy-copy { padding: 25px 21px; }
