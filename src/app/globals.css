@@ -144,8 +144,10 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .footer-brand .brand-copy strong { color: white; }
 .footer-note { max-width: 270px; color: rgba(255,255,255,.72); font-size: var(--text-small); line-height: 1.7; }
 .footer-title { margin: 3px 0 19px; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.footer-location-title { margin-top: 27px; }
 .footer-links { display: grid; gap: 12px; }
-.footer-links a, .footer-links span { color: rgba(255,255,255,.88); font-size: var(--text-small); line-height: 1.6; }
+.footer-links a, .footer-links span, .footer-links address { color: rgba(255,255,255,.88); font-size: var(--text-small); line-height: 1.6; }
+.footer-links address { font-style: normal; }
 .footer-links a:hover { color: var(--gold); }
 .footer-bottom { min-height: 52px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.7); font-size: 12px; }
 .inner-page { min-height: 65vh; }

@@ -27,7 +27,10 @@ export function SiteFooter() {
           <div className="footer-links">
             {business.phones.map((phone) => <a href={`tel:${phone.href}`} key={phone.display}>{phone.display}</a>)}
             <a href={`mailto:${business.email}`}>{business.email}</a>
-            <span>{business.location}</span>
+          </div>
+          <p className="footer-title footer-location-title">Location</p>
+          <div className="footer-links">
+            <address>{business.location}</address>
           </div>
         </div>
       </div>
