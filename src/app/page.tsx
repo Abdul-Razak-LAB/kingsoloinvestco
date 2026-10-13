@@ -53,7 +53,7 @@ export default function Home() {
           <div className="intro-copy">
             <h2 id="intro-title">Your World Is In<br /><em>Your Hands</em></h2>
           </div>
-          <p className="intro-description">Your One-Stop Center for Lands, Cars, Building, Real Estate and Global Supplies. Genuine lands, quality cars, strong buildings — all with wisdom and integrity.</p>
+          <p className="intro-description">We provide genuine lands, quality cars, buildings and global supplies in Ghana with wisdom, integrity and secure service.</p>
         </div>
       </section>
 
